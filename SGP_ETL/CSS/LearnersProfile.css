@@ -1,0 +1,127 @@
+:root{
+    --main-bg-color:rgb(255, 255, 255) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* HEADER COMPONENT */
+
+
+
+header{
+    /* background-color: var(--main-bg-color); */
+    background: linear-gradient(rgb(23, 234, 217), rgb(96, 120, 234));
+    height: 11vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+.dropbtn {
+    border-radius: 200px;
+    box-sizing: 2px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn img{
+    border-radius: 200px;
+    box-sizing: 2px;
+}
+
+.dropdown {
+    position: relative;
+    top: 1vh;
+    left: 92vw;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding: 0 0 0 0.5vw;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px
+        0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+
+/* MAIN COMPONENT */
+
+
+
+main{
+    /* background-color: var(--main-bg-color); */
+    background: white;
+    height: 89vh;
+    padding: 0 5vw 0 5vw;
+}
+
+.sbox
+{
+    position: relative;
+    top: 10vh;
+    /* left: 5vw; */
+    display: grid;
+    background-color: whitesmoke;
+    grid-gap: 20px;
+    grid-template-columns:  auto auto auto;
+    grid-template-rows: 35vh 35vh auto;
+}
+
+.sopt{
+    display: flex;
+    background:white;
+    border: 6px solid rgb(96, 120, 234);
+    border-radius: 20px;
+    align-items: center;   
+    justify-content: center; 
+    transition: transform .2s;
+}
+
+.sopt h1{
+
+    font-size: 100px;
+    color: rgb(23, 234, 217);
+    text-align : center;
+}
+
+.sopt:hover {
+    transform: scale(1.050); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
